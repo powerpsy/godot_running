@@ -1,0 +1,247 @@
+[gd_scene load_steps=11 format=3 uid="uid://cm7fd3tpxeocd"]
+
+[ext_resource type="Texture2D" uid="uid://co43hjlluxgdu" path="res://PNG/Backgrounds/set3_background.png" id="1_h2hpf"]
+[ext_resource type="Texture2D" uid="uid://d1o31b14cbw8f" path="res://PNG/Players/Player Blue/playerBlue_stand.png" id="2_xytko"]
+[ext_resource type="Script" path="res://player.gd" id="2_xyvkf"]
+[ext_resource type="Script" path="res://terrain.gd" id="4_k6stt"]
+[ext_resource type="Texture2D" uid="uid://daj3e24wjrw4p" path="res://PNG/Tiles/Brown tiles/tileBrown_01.png" id="4_sswbo"]
+[ext_resource type="Texture2D" uid="uid://ckd7g7b2athkw" path="res://PNG/Tiles/Brown tiles/tileBrown_02.png" id="5_566jk"]
+[ext_resource type="Texture2D" uid="uid://0rlgw4t4tcjm" path="res://PNG/Tiles/Brown tiles/tileBrown_03.png" id="6_6qx86"]
+[ext_resource type="Texture2D" uid="uid://eetnnic2b02n" path="res://PNG/Enemies/enemyFloating_1.png" id="8_kty4r"]
+[ext_resource type="Script" path="res://ennemy.gd" id="8_msvca"]
+[ext_resource type="Texture2D" uid="uid://bxc33bjvq8k2d" path="res://PNG/GameOver.png" id="10_ugux3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(576, 325)
+scale = Vector2(1.8, 1.35)
+texture = ExtResource("1_h2hpf")
+
+[node name="Terrain" type="StaticBody2D" parent="."]
+position = Vector2(-256, 560)
+script = ExtResource("4_k6stt")
+metadata/_edit_group_ = true
+
+[node name="TileBrown01" type="Sprite2D" parent="Terrain"]
+position = Vector2(32, 32)
+texture = ExtResource("4_sswbo")
+
+[node name="TileBrown02" type="Sprite2D" parent="Terrain"]
+position = Vector2(96, 32)
+texture = ExtResource("5_566jk")
+
+[node name="TileBrown03" type="Sprite2D" parent="Terrain"]
+position = Vector2(160, 32)
+texture = ExtResource("6_6qx86")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terrain"]
+position = Vector2(96, 32.0001)
+scale = Vector2(2.96875, 1)
+polygon = PackedVector2Array(-32.3368, 31.9999, -32.3368, -32.0001, 32.3368, -32.0001, 32.3368, 31.9999)
+
+[node name="Terrain2" type="StaticBody2D" parent="."]
+position = Vector2(-64, 560)
+script = ExtResource("4_k6stt")
+metadata/_edit_group_ = true
+
+[node name="TileBrown01" type="Sprite2D" parent="Terrain2"]
+position = Vector2(32, 32)
+texture = ExtResource("4_sswbo")
+
+[node name="TileBrown02" type="Sprite2D" parent="Terrain2"]
+position = Vector2(96, 32)
+texture = ExtResource("5_566jk")
+
+[node name="TileBrown03" type="Sprite2D" parent="Terrain2"]
+position = Vector2(160, 32)
+texture = ExtResource("6_6qx86")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terrain2"]
+position = Vector2(96, 32.0001)
+scale = Vector2(2.96875, 1)
+polygon = PackedVector2Array(-32.3368, 31.9999, -32.3368, -32.0001, 32.3368, -32.0001, 32.3368, 31.9999)
+
+[node name="Terrain3" type="StaticBody2D" parent="."]
+position = Vector2(128, 560)
+script = ExtResource("4_k6stt")
+metadata/_edit_group_ = true
+
+[node name="TileBrown01" type="Sprite2D" parent="Terrain3"]
+position = Vector2(32, 32)
+texture = ExtResource("4_sswbo")
+
+[node name="TileBrown02" type="Sprite2D" parent="Terrain3"]
+position = Vector2(96, 32)
+texture = ExtResource("5_566jk")
+
+[node name="TileBrown03" type="Sprite2D" parent="Terrain3"]
+position = Vector2(160, 32)
+texture = ExtResource("6_6qx86")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terrain3"]
+position = Vector2(96, 32.0001)
+scale = Vector2(2.96875, 1)
+polygon = PackedVector2Array(-32.3368, 31.9999, -32.3368, -32.0001, 32.3368, -32.0001, 32.3368, 31.9999)
+
+[node name="Terrain4" type="StaticBody2D" parent="."]
+position = Vector2(320, 560)
+script = ExtResource("4_k6stt")
+metadata/_edit_group_ = true
+
+[node name="TileBrown01" type="Sprite2D" parent="Terrain4"]
+position = Vector2(32, 32)
+texture = ExtResource("4_sswbo")
+
+[node name="TileBrown02" type="Sprite2D" parent="Terrain4"]
+position = Vector2(96, 32)
+texture = ExtResource("5_566jk")
+
+[node name="TileBrown03" type="Sprite2D" parent="Terrain4"]
+position = Vector2(160, 32)
+texture = ExtResource("6_6qx86")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terrain4"]
+position = Vector2(96, 32.0001)
+scale = Vector2(2.96875, 1)
+polygon = PackedVector2Array(-32.3369, 31.9999, -32.3369, -32.0001, 32.3368, -32.0001, 32.3368, 31.9999)
+
+[node name="Terrain5" type="StaticBody2D" parent="."]
+position = Vector2(512, 560)
+script = ExtResource("4_k6stt")
+metadata/_edit_group_ = true
+
+[node name="TileBrown01" type="Sprite2D" parent="Terrain5"]
+position = Vector2(32, 32)
+texture = ExtResource("4_sswbo")
+
+[node name="TileBrown02" type="Sprite2D" parent="Terrain5"]
+position = Vector2(96, 32)
+texture = ExtResource("5_566jk")
+
+[node name="TileBrown03" type="Sprite2D" parent="Terrain5"]
+position = Vector2(160, 32)
+texture = ExtResource("6_6qx86")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terrain5"]
+position = Vector2(96, 32.0001)
+scale = Vector2(2.96875, 1)
+polygon = PackedVector2Array(-32.3368, 31.9999, -32.3368, -32.0001, 32.3369, -32.0001, 32.3369, 31.9999)
+
+[node name="Terrain6" type="StaticBody2D" parent="."]
+position = Vector2(704, 560)
+script = ExtResource("4_k6stt")
+metadata/_edit_group_ = true
+
+[node name="TileBrown01" type="Sprite2D" parent="Terrain6"]
+position = Vector2(32, 32)
+texture = ExtResource("4_sswbo")
+
+[node name="TileBrown02" type="Sprite2D" parent="Terrain6"]
+position = Vector2(96, 32)
+texture = ExtResource("5_566jk")
+
+[node name="TileBrown03" type="Sprite2D" parent="Terrain6"]
+position = Vector2(160, 32)
+texture = ExtResource("6_6qx86")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terrain6"]
+position = Vector2(96, 32.0001)
+scale = Vector2(2.96875, 1)
+polygon = PackedVector2Array(-32.3368, 31.9999, -32.3368, -32.0001, 32.3369, -32.0001, 32.3369, 31.9999)
+
+[node name="Terrain7" type="StaticBody2D" parent="."]
+position = Vector2(896, 560)
+script = ExtResource("4_k6stt")
+metadata/_edit_group_ = true
+
+[node name="TileBrown01" type="Sprite2D" parent="Terrain7"]
+position = Vector2(32, 32)
+texture = ExtResource("4_sswbo")
+
+[node name="TileBrown02" type="Sprite2D" parent="Terrain7"]
+position = Vector2(96, 32)
+texture = ExtResource("5_566jk")
+
+[node name="TileBrown03" type="Sprite2D" parent="Terrain7"]
+position = Vector2(160, 32)
+texture = ExtResource("6_6qx86")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terrain7"]
+position = Vector2(96, 32.0001)
+scale = Vector2(2.96875, 1)
+polygon = PackedVector2Array(-32.3368, 31.9999, -32.3368, -32.0001, 32.3369, -32.0001, 32.3369, 31.9999)
+
+[node name="Terrain8" type="StaticBody2D" parent="."]
+position = Vector2(1088, 560)
+script = ExtResource("4_k6stt")
+metadata/_edit_group_ = true
+
+[node name="TileBrown01" type="Sprite2D" parent="Terrain8"]
+position = Vector2(32, 32)
+texture = ExtResource("4_sswbo")
+
+[node name="TileBrown02" type="Sprite2D" parent="Terrain8"]
+position = Vector2(96, 32)
+texture = ExtResource("5_566jk")
+
+[node name="TileBrown03" type="Sprite2D" parent="Terrain8"]
+position = Vector2(160, 32)
+texture = ExtResource("6_6qx86")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terrain8"]
+position = Vector2(96, 32.0001)
+scale = Vector2(2.96875, 1)
+polygon = PackedVector2Array(-32.3369, 31.9999, -32.3369, -32.0001, 32.3368, -32.0001, 32.3368, 31.9999)
+
+[node name="Terrain9" type="StaticBody2D" parent="."]
+position = Vector2(1280, 560)
+script = ExtResource("4_k6stt")
+metadata/_edit_group_ = true
+
+[node name="TileBrown01" type="Sprite2D" parent="Terrain9"]
+position = Vector2(32, 32)
+texture = ExtResource("4_sswbo")
+
+[node name="TileBrown02" type="Sprite2D" parent="Terrain9"]
+position = Vector2(96, 32)
+texture = ExtResource("5_566jk")
+
+[node name="TileBrown03" type="Sprite2D" parent="Terrain9"]
+position = Vector2(160, 32)
+texture = ExtResource("6_6qx86")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terrain9"]
+position = Vector2(96, 32.0001)
+scale = Vector2(2.96875, 1)
+polygon = PackedVector2Array(-32.3369, 31.9999, -32.3369, -32.0001, 32.3369, -32.0001, 32.3369, 31.9999)
+
+[node name="Ennemy" type="StaticBody2D" parent="."]
+position = Vector2(1072, 512)
+script = ExtResource("8_msvca")
+metadata/_edit_group_ = true
+
+[node name="EnemyFloating1" type="Sprite2D" parent="Ennemy"]
+texture = ExtResource("8_kty4r")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Ennemy"]
+position = Vector2(-0.800001, 0.799999)
+scale = Vector2(0.96875, 0.96875)
+polygon = PackedVector2Array(-20.8516, 19.8193, -20.8516, -21.471, 21.4711, -21.471, 21.4711, 19.8193)
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(128, 512)
+script = ExtResource("2_xyvkf")
+
+[node name="PlayerSprite" type="Sprite2D" parent="Player"]
+texture = ExtResource("2_xytko")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
+position = Vector2(-0.499999, 0.741478)
+scale = Vector2(0.950521, 0.982955)
+polygon = PackedVector2Array(22.6192, 13.4885, 23.6712, 0.263, 4.73425, -28.2225, -4.73424, -28.2225, -23.6712, 0.263, -22.6192, 13.4885, -7.8904, 13.4885, -7.8904, 26.7139, 6.83836, 26.7139, 6.83836, 13.4885)
+
+[node name="GameOver" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(576, 272)
+texture = ExtResource("10_ugux3")
